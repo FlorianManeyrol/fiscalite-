@@ -1,0 +1,17 @@
+<div class="container form">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6 text-center">
+      <h3> Edit your fruit juice</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <%=  simple_form_for @juice do |f| %>
+        <%= f.input :name, hint: 'Enter the name of your juice' %>
+        <%= f.input :ingredient, as: :text, :input_html => { :rows => 8 }, hint: 'Specify all ingredients with their doses', label: 'Ingredient(s)'%>
+        <%= f.input :preparation, as: :text, :input_html => { :rows => 8 }, hint: 'Specify steps of preparation'%>
+        <%= f.submit 'Update', { :class => 'btn btn-block btn-success', :style => "margin:0px;" } %>
+      <% end %>
+    </div>
+  </div>
+</div>

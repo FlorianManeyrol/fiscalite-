@@ -23,3 +23,55 @@
 .bg-dark-blue {
   background: #3b5998;
 }
+
+.filter-black {
+  background-color: rgba(0,0,0,0.4);
+  height:100%;
+  width:100%;
+}
+
+// flex-box
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  flex: 1 0 auto;
+}
+
+// btn
+.btn-success {
+  color: #fff;
+  background-color: #6FEC8A;
+  border-color: #6FEC8A;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0px 15px;
+  text-shadow: 2px 2px #5AD54F;
+  &:hover, &:focus, &:active, &:active:hover, &:active:focus {
+    opacity: 0.9;
+    background-color: #6FEC8A;
+    border-color: #6FEC8A;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #FBE24F;
+  border-color: #FBE24F;
+  padding: 15px 20px;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  margin: 0px 15px;
+  text-shadow: 2px 2px #E4BB3C;
+  &:hover, &:focus, &:active, &:active:hover, &:active:focus  {
+    opacity: 0.9;
+    background-color: #FBE24F;
+    border-color: #FBE24F;
+  }
+}
+
+
